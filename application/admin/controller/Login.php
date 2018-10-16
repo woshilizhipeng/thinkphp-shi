@@ -18,8 +18,8 @@ class Login extends Controller
 
 		$code = new Code();
 		$date = $code->make();
-		//return $date;
-		$this->assign('data',$data);
-		return $this->fftch('login');
+		return $date;
+		//$this->assign('data',$data);
+		//return $this->fetch('login');
 	}
 }
